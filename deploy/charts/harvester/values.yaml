@@ -450,3 +450,6 @@ loop-device-cleaner:
     imagePullPolicy: IfNotPresent
     repository: alpine
     tag: 3.12
+
+harvester-journal:
+  enabled: true
