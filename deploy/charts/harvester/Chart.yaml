@@ -54,4 +54,4 @@ dependencies:
   - name: harvester-journal
     version: 0.1.0
     repository: file://dependency_charts/harvester-journal
-    condition: harvester-journal.enabled
+#    condition: harvester-journal.enabled
