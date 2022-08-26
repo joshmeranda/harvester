@@ -93,6 +93,13 @@ kubevirt:
       ##
       emulatedMachines: ["q35","pc-q35*","pc","pc-i440fx*"]
 
+## Specify the parameters to override the sub-chart.
+##
+harvester-journal:
+  enabled: true
+
+  namespaceOverride: "cattle-logging-system"
+
 ###########################################################################
 ###########################################################################
 ##                    Default values for Harvester                       ##
@@ -442,6 +449,3 @@ generalJob:
     imagePullPolicy: IfNotPresent
     repository: registry.suse.com/bci/bci-base
     tag: 15.3
-
-harvester-journal:
-  enabled: true
